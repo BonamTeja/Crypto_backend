@@ -17,7 +17,7 @@ dotEnv.config();
 const app = express();
 app.use(cors())
 app.use(express.json())
-const port = process.env.PORT || 5500;
+const port = process.env.PORT;
 
 //Creating a session
 app.use(session({
